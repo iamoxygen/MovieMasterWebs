@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #fff;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  background-color: white;
+  margin-left: 70px;
+  margin-right: 80px;
+  width: 1380px;
+}
+.lSSlideOuter {
+  display: block;
+  width: 1350px;
+}
+.usingCss {
+  display: block;
+  width: 1380px;
+}
+
+.box {
+  width: 320px;
+  height: 510px;
+  background-color: #1e1e26;
+  border-radius: 10px;
+  display: flex;
+  box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.5);
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 20px 5px;
+}
+.box:hover {
+  background-color: #17171d;
+  transform-style: preserve-3d;
+  transform: scale(1.02);
+  transition: all ease 0.3s;
+}
+.box:hover {
+  color: #c0292b;
+  transition: all ease 0.5s;
+}
+.fa-arrow-right {
+  position: absolute;
+  margin-left: 80rem;
+  margin-top: 0rem;
+  color: #fff;
+  font-size: 3rem;
+}
+.fa-arrow-left {
+  margin-top: 0rem;
+  color: #fff;
+  position: absolute;
+  font-size: 3rem;
+  left: 40%;
+}
+.fa-arrow-left:hover {
+  color: black;
+}

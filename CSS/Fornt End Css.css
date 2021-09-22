@@ -1,0 +1,88 @@
+body,html
+{
+	margin: 0vh;
+	flex-direction: column;
+	justify-content: center;
+    font-family:"Source Code Pro", "Source Code Pro Black", "Source Code Pro ExtraLight", "Source Code Pro Semibold", "Source Code Pro Light";
+}
+@media screen {
+  .main,#Header,.Trending {
+    width: 100%;
+	 position: fixed;
+  }
+}
+.lis
+{
+	float: left;
+	display: inline-block;
+	overflow: hidden;
+	margin: 0 0 0 900px;
+}
+.logoimg
+{
+	margin-left: 120px;
+	margin-top: 10px;
+	overflow: hidden;
+}
+#lis1{
+	color: white;
+	background-color: dodgerblue;
+	
+}
+
+#List{
+	position: fixed;
+	overflow: hidden;
+
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+a:visted {
+	color: black;
+}
+ul
+{
+    margin-top: 0px;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	list-style: none;
+	cursor: pointer;
+	margin-bottom: 0px;
+}
+li{
+	border-radius: 5px;
+	margin-left: 5px;
+}
+ul li
+{
+	float: left;
+	width: 120px;
+	height: 50px;
+	margin-top: 35px;
+	text-align: center;
+	font-size: 20px;
+	cursor: pointer;
+	background-color:white;
+	align-content:center;
+}
+ul li a
+{
+	
+	text-decoration: none;
+	margin-top: 10px;
+	display:block;
+	cursor: pointer;
+	
+}
+a:hover{
+	color: white;
+}
+ul li:hover
+{ 
+	background: #4ABEFE;
+	color: white;
+	cursor: pointer;
+}

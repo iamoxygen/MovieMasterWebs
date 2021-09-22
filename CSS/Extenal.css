@@ -1,0 +1,17 @@
+.containee{
+	margin-top: 50px;
+	margin-left: 50px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+#img1{
+	height:500px;
+	width: auto;
+}
+p2{
+	margin-top: 10px;
+}
+h3{
+	margin-top: 10px;
+	font-size: 1.5rem;
+}

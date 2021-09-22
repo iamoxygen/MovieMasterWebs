@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Narcos</title>
+	<link rel="stylesheet" href="../CSS/REvStyle2.css">
+	<link rel="stylesheet" href="../CSS/StarRating2.css">
+	<link rel="stylesheet" href="../js/StarRating.js">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			margin: 0px;
+			padding: 0px;
+			text-transform: capitalize;
+		}
+
+		.head {
+			height: 61px;
+			background-color: black;
+		}
+
+		.video {
+			background-color: #EAEAEA;
+			height: 490px;
+			position: relative;
+		}
+
+		#AC {
+			position: relative;
+			margin-top: 160px;
+			margin-left: 135px;
+			height: 450px;
+			border-radius: 5px;
+		}
+
+		#FC {
+			height: 418px;
+			width: 100%;
+			position: absolute;
+		}
+
+		.rating {
+			height: 65px;
+			width: 400px;
+			margin-top: 0px;
+			background: #40EB1F;
+			float: inherit;
+
+		}
+
+		.main {
+			height: 1400px;
+		}
+
+		#AD {
+			position: absolute;
+			float: left;
+			margin-top: 150px;
+			margin-left: 300px;
+			height: 15%;
+		}
+
+		#AD:hover {
+			height: 16%;
+			transition: 0.2s;
+			cursor: pointer;
+		}
+
+		#overlay {
+			position: fixed;
+			display: none;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(0, 0, 0, 0.5);
+			z-index: 2;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body onLoad="openCity(event, 'overview')">
+	<div class="main">
+		<div class="head">
+			<a class="active" href="Landing page.php">Home</a>
+			<a href="Streming page.php">Watch</a>
+			<a href="T&C.html">Supports</a>
+		</div>
+		<div class="video">
+			<img id="FC" src="../Image/Narcos-2º-temporada.jpg" alt="Video" />
+			<img id="AC" src="../Image/3868-Hot-Movie-TV-Shows-Narcos-16-14-x21-Poster (1).jpg" alt="poster" />
+			<span class="titles">Narcos</span>
+			<span class="titles" id="T1">Action</span>
+			<span class="titles" id="T2">Adventure</span>
+			<span class="titles" id="T3">Fantasy</span>
+
+			<span class="titles" id="T4"><img id="imgT4" src="../Image/Heart.png" height="35" alt="Heart"></span>
+			<p1>84%</p1>
+			<p2>CRITICS RATING</p2>
+			<p3>RATE IT</p3><img class="titles" id="Stars" src="../Image/4 star.png" alt="star" height="26">
+			<a href="NarcosPayment.html"><button class="titles" id="Buy">Buy Now</button></a>
+			<x-star-rating onClick="openForm()" value="3" number="5"></x-star-rating>
+			<script src="../js/StarRating.js"></script>
+
+			<img onclick="on()" id="AD" src="../Image/icons8-circled-play-filled-100.png" alt="play" />
+
+		</div>
+		<div id="overlay" onClick="off()">
+			<iframe width="1340" id="myVideo" height="550" src="https://www.youtube.com/embed/U7elNhHwgBU?ecver=1"
+				frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+		<script>
+			function on() {
+				document.getElementById("overlay").style.display = "block";
+			}
+
+			function off() {
+				document.getElementById("overlay").style.display = "none";
+			}
+		</script>
+		<div class="Leftpanel">
+			<button onClick="openForm()" class="titles" id="Watch">Watch Now</button>
+			<img class="titles" id="cal" src="../Image/calendar-image-png-3.png" alt="cal">
+			<span class="titles" id="cla">25 Aug,2015 Released</span>
+			<span class="titles" id="language">&nbsp;language&nbsp;</span>
+			<span class="titles" id="languagess">English, Spanish
+			</span>
+			<div class="form-popup" id="myForm" onClick="closeForm()">
+				<p>dgsadgsgdgasdgsadg</p>
+			</div>
+			<div id="Overleeee" onClick="closeForm()">
+				<div class="bv">
+					<a href="http://localhost/project/registration/Narcos%20season%201/"><button class="season1">Season
+							1</button></a>
+					<button class="season2">Season 2</button>
+					<button class="season3">Season 3</button>
+				</div>
+				<script>
+					function openForm() {
+						document.getElementById("Overleeee").style.display = "block";
+					}
+
+					function closeForm() {
+						document.getElementById("Overleeee").style.display = "none";
+					}
+				</script>
+
+			</div>
+		</div>
+
+		<div class="Rightpanel">
+			<div class="tab">
+				<button class="tablinks" id="over" onclick="openCity(event, 'overview')">Overview</button>
+				<button id="margi" class="tablinks" onclick="openCity(event, 'User')">User Comment</button>
+			</div>
+			<div id="overview" class="tabcontent">
+				<h2>Story</h2>
+				<p5>narcos is based on a real life story but the Netflix series has been fictionalised, nonetheless it
+					is very close to the life of Pablo Escobar. Spoilers ahead:) Murphy comes much later in the actual
+					story ,also there is no inspector Carrillo in the crackdown of the cartel.</p5>
+				<div>
+					<h2></h2>
+					<div class="slideshow-container">
+					</div>
+					<div class="mySlides fade">
+					</div>
+					<div class="mySlides fade">
+						<a href="https://en.wikipedia.org/wiki/Robert_Downey_Jr." target="_parent"> <img class="image"
+								src="../Image/sper.jpg" width="160" alt="**"></a>
+					</div>
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+				<br>
+				<script>
+					var slideIndex = 1;
+					showSlides(slideIndex);
+
+					// Next/previous controls
+					function plusSlides(n) {
+						showSlides(slideIndex += n);
+					}
+
+					// Thumbnail image controls
+					function currentSlide(n) {
+						showSlides(slideIndex = n);
+					}
+
+					function showSlides(n) {
+						var i;
+						var slides = document.getElementsByClassName("mySlides");
+						var dots = document.getElementsByClassName("dot");
+						if (n > slides.length) { slideIndex = 1 }
+						if (n < 1) { slideIndex = slides.length }
+						for (i = 0; i < slides.length; i++) {
+							slides[i].style.display = "none";
+						}
+						for (i = 0; i < dots.length; i++) {
+							dots[i].className = dots[i].className.replace(" active", "");
+						}
+						slides[slideIndex - 1].style.display = "block";
+					}
+
+				</script>
+			</div>
+		</div>
+		<div id="User" class="tabcontent">
+
+
+
+		</div>
+		<script>
+			function openCity(evt, cityName) {
+				var i, tabcontent, tablinks;
+				tabcontent = document.getElementsByClassName("tabcontent");
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+				}
+				tablinks = document.getElementsByClassName("tablinks");
+				for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(" active", "");
+				}
+				document.getElementById(cityName).style.display = "block";
+				evt.currentTarget.className += " active";
+			}
+		</script>
+	</div>
+	<div class="footer">
+	</div>
+	<script>
+		var vid = document.getElementById("myVideo");
+
+		function playVid() {
+			vid.play();
+		}
+
+		function pauseVid() {
+			vid.pause();
+		}
+	</script>
+
+	<script>
+		function Act() {
+			document.getElementById('overview') += " active";
+		}
+	</script>
+</body>
+
+</html>

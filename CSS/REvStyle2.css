@@ -1,0 +1,370 @@
+iframe
+{
+	border-radius: 5px;
+}
+
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+.head a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+	margin-left: 20px;
+	margin-top: 8px;
+  font-family: Ubuntu, "Ubuntu Condensed", "Ubuntu Light", "Ubuntu Mono";
+}
+
+.head a:hover {
+  background-color:white;
+  color: black;
+}
+
+.head a.active {
+	margin-left: 570px;
+}
+#myVideo
+{
+	margin: 100px;
+	border-radius: 8px;
+}
+.Leftpanel
+{
+	float: left;
+	height: 500px;
+	width: 460px;
+}
+.Rightpanel
+{
+	height: 500px;
+	width: 1059.1px;
+	margin: 0px;
+	float: left;
+}
+h1{
+	color: black;
+}
+.titles{
+	position:absolute;
+	float: left;
+	margin-top: 280px;
+	margin-left: 19px;
+	color:#E7E3E3;
+	font-family: Ubuntu, "Ubuntu Condensed", "Ubuntu Light", "Ubuntu Mono";
+	font-size: 40px;
+	font-weight: 20
+}
+#T1
+{
+	margin-top: 340px;
+	font-size: 15px;
+	padding: 10px;
+	border-radius: 5px;
+	border:solid;
+	border-width: 1.2px;
+	border-color: #E7E3E3;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+#T2
+{
+	margin-top: 340px;
+	margin-left: 105px;
+	font-size: 15px;
+	padding: 10px;
+	border-radius: 5px;
+	border:solid;
+	border-width: 1.2px;
+	border-color: #E7E3E3;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+#T3
+{
+	margin-top: 340px;
+	margin-left: 220px;
+	font-size: 15px;
+	padding: 10px;
+	border-radius: 5px;
+	border:solid;
+	border-width: 1.2px;
+	border-color: #E7E3E3;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+p1{font-size: 25px; align: center;margin-top: 432px;margin-left: 89px;; position: absolute; color: black; font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif"; font: 200;
+}
+p2{font-size: 13px; align: center;margin-top: 460px;margin-left: 260px;; position: absolute; color: black; font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif"; font-weight: 100;
+text-transform: capitalize;
+}
+p3{font-size: 13px; align: center;margin-top: 460px;margin-left: 480px;; position: absolute; color: black; font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif"; font-weight: 100;
+	text-transform:capitalize;
+}
+
+#T4
+{
+	margin-top: 430px;
+	margin-left: 40px;
+}
+#Stars
+{
+	margin-top: 428.1px;
+	margin-left: 255px;
+}
+#Buy
+{
+	margin-top: 425px;
+	margin-left: 800px;
+	font-size: 20px;
+	font-weight: 100;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	padding: 10px;
+	padding-left: 35px;
+	padding-right: 35px; box-shadow: 7px 7px 20px -7px grey;
+	border:none;
+	border-radius: 6px;
+	color: white;
+	
+	background-color:dodgerblue;
+}
+#Buy:hover
+{
+	transition: ease 0.1s;
+	box-shadow: 10px 10px 20px -5px grey;
+	padding-top: 11px;
+	padding-bottom: 11px;
+	padding-left: 38px;
+	padding-right: 38px;
+	cursor: pointer;
+}
+#Watch:hover
+{
+	transition: ease 0.1s;
+	box-shadow: 10px 10px 20px -5px grey;
+	padding-top: 11px;
+	margin-left: 135px;
+	padding-bottom: 11px;
+	padding-left: 102px;
+	padding-right: 106px;
+}
+#Watch
+{
+	margin-left: 135px;
+	margin-top: 130px;
+	font-size: 20px;
+	font-weight: 300;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	padding: 10px;
+	padding-left: 100px;
+	padding-right: 104px;
+	border:none;
+	box-shadow: 7px 7px 20px -7px grey;
+	border-radius: 6px;
+	color: white;
+	background-color:dodgerblue;
+	cursor: pointer;
+}
+#overlayer,#Overleeee
+{
+	position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+p5
+{
+	font-weight: 100;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 18px;
+	
+}
+h2
+{
+	font-weight: 600;
+	font-family:"Ubuntu Light";
+	font-size: 30px;
+}
+#cal
+{
+	margin-top: 200px;
+	margin-left: 150px;
+	height: 30px;
+}
+#cla
+{
+	color: black;
+	font-weight: 100;
+	font-size: 20px;
+	margin-top: 205px;
+	margin-left: 190px;
+}
+#language
+{
+	color: black;
+	font-weight: 100;
+	font-size: 20px;
+	margin-top: 245px;
+	margin-left: 230px;
+}
+#languagess
+{
+	color: black;
+	font-weight: 100;
+	font-size: 14px;
+	margin-top: 275px;
+	margin-left: 180px;
+}
+#margi,#margis
+{
+	margin-left: 40px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+* {
+    box-sizing: border-box;
+	font-family: "Ubuntu Light";
+}
+
+input[type=text], select, textarea
+{
+    font-family: "Ubuntu Light";
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+	font-family: "Ubuntu Light";
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color:dodgerblue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color:#85C3FF ;
+}
+
+.container {
+    border-radius: 5px;
+    background-color:#E7E7E7;
+    padding: 20px;
+	font-family: "Ubuntu Light";
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+	font-family: "Ubuntu Light";
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}

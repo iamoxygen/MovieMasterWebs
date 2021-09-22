@@ -1,0 +1,319 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Game of Thrones</title>
+	<link rel="Icon" href="../Logo/fix logo.png.ico">
+	<link rel="stylesheet" href="../../bootstrap-5.0.0-alpha2-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../bootstrap-4.3.1-dist/css/bootstrap.min.css">
+	<script src="../../bootstrap-5.0.0-alpha2-dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="../../CSS/REvStyle2.css">
+	<link rel="stylesheet" href="../../CSS/StarRating2.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		.bi-bi-person-circle {
+			display: inline-block;
+			position: absolute;
+			margin: 16.5px 0px 0px 5px;
+		}
+
+		#logout {
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+
+		.nav-link {
+			font-size: 20px;
+		}
+
+		.navbar-brand {
+			margin-left: 200px;
+		}
+
+		#navbarSupportedContent,
+		.btn {
+			margin-right: 40px;
+		}
+
+		.carousel-item {
+			height: 28rem;
+			background: #777;
+			color: white;
+			position: relative;
+		}
+
+		body {
+			margin: 0px;
+			padding: 0px;
+			text-transform: capitalize;
+		}
+
+		.head {
+			height: 61px;
+			background-color: black;
+		}
+
+		.video {
+			background-color: #EAEAEA;
+			height: 490px;
+			position: relative;
+		}
+
+		#AC {
+			position: relative;
+			margin-top: 160px;
+			margin-left: 135px;
+			height: 450px;
+			border-radius: 5px;
+		}
+
+		#FC {
+			height: 418px;
+			width: 100%;
+			position: absolute;
+		}
+
+		.rating {
+			height: 65px;
+			width: 400px;
+			margin-top: 0px;
+			background: #40EB1F;
+			float: inherit;
+
+		}
+
+		.main {
+			height: 1400px;
+		}
+
+		#AD {
+			position: absolute;
+			float: left;
+			margin-top: 150px;
+			margin-left: 300px;
+			height: 15%;
+		}
+
+		#AD:hover {
+			height: 16%;
+			transition: 0.2s;
+			cursor: pointer;
+		}
+
+		#overlay {
+			position: fixed;
+			display: none;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(0, 0, 0, 0.5);
+			z-index: 2;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body onLoad="openCity(event, 'overview')">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light" id="Navbaredit">
+		<a class="navbar-brand" href="../../index.html"><img src="../../Logo/fix logo.png" alt="logo" height="80"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="../../index.html">Home <span class="sr-only"></span></a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="../Watch/index.html">Watch</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../aboutus/AboutsUs.html">About us</a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi-bi-person-circle"
+							fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z" />
+							<path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+							<path fill-rule="evenodd"
+								d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z" />
+						</svg>
+						<a class="nav-link" id="logout" href="../../pages/Login.html" tabindex="-1"
+							aria-disabled="true">Logout</a>
+					</li>
+				</ul>
+			</form>
+		</div>
+	</nav>
+	<div class="main">
+		<div class="video">
+			<img id="FC" src="tyrion-lannister-game-of-thrones-wallpaper-preview.jpg" alt="Video" />
+			<img id="AC" src="MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_.jpg"
+				alt="poster" />
+			<span class="titles">Game of Thrones</span>
+			<span class="titles" id="T1">Action</span>
+			<span class="titles" id="T2">Adventure</span>
+			<span class="titles" id="T3">Fantasy</span>
+
+			<span class="titles" id="T4"><img id="imgT4" src="1200px-Rotten_Tomatoes_positive_audience.svg.png"
+					height="35" alt="Rating"></span>
+			<p1>84%</p1>
+			<p3>RATE IT</p3>
+			<a href="NarcosPayment.html"><button class="titles" id="Buy">Buy Now</button></a>
+			<x-star-rating onClick="openForm()" value="3" number="5"></x-star-rating>
+			<script src="../CSS/StarRating.js"></script>
+
+			<img onclick="on()" id="AD" src="360_F_362878515_d4IZ88mRjRtjdtoEHzI7y4GcGhBsO4Nr.png" alt="play" />
+
+		</div>
+		<div id="overlay" onClick="off()">
+			<iframe width="649" height="365" src="https://www.youtube.com/embed/gcTkNV5Vg1E" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
+		</div>
+		<script>
+			function on() {
+				document.getElementById("overlay").style.display = "block";
+			}
+
+			function off() {
+				document.getElementById("overlay").style.display = "none";
+			}
+		</script>
+		<div class="Leftpanel">
+			<button onClick="openForm()" class="titles" id="Watch">Watch Now</button>
+			<img class="titles" id="cal" src="calendar-512.png" alt="cal">
+			<span class="titles" id="cla">(2011–2019) Released</span>
+			<span class="titles" id="language">&nbsp;Language&nbsp;</span>
+			<span class="titles" id="languagess">English, Spanish
+			</span>
+			<div class="form-popup" id="myForm" onClick="closeForm()">
+			</div>
+			<div id="Overleeee" onClick="closeForm()">
+				<div class="bv">
+					<a href="http://localhost/project/registration/Narcos%20season%201/"><button class="season1">Season
+							1</button></a>
+					<button class="season2">Season 2</button>
+					<button class="season3">Season 3</button>
+				</div>
+				<script>
+					function openForm() {
+						document.getElementById("Overleeee").style.display = "block";
+					}
+
+					function closeForm() {
+						document.getElementById("Overleeee").style.display = "none";
+					}
+				</script>
+
+			</div>
+		</div>
+
+		<div class="Rightpanel">
+			<div class="tab">
+				<button class="tablinks" id="over" onclick="openCity(event, 'overview')">Overview</button>
+				<button id="margi" class="tablinks" onclick="openCity(event, 'User')">Cast</button>
+			</div>
+			<div id="overview" class="tabcontent">
+				<h2>Story</h2>
+				<p5>Based on the best-selling book series "A Song of Ice and Fire" by George R.R. Martin, this sprawling
+					HBO drama is set in a world where summers span several decades and winters can last a lifetime. From
+					the scheming south and the savage eastern lands, to the frozen north and ancient Wall that protects
+					the realm from the mysterious darkness beyond, the powerful families of the Seven Kingdoms are
+					locked in a battle for the Iron Throne. This is a story of duplicity and treachery, nobility and
+					honor, conquest and triumph. In the Game of Thrones, you either win or you die.<br>
+					Nine noble families fight for control of the mythical land of Westeros. Political and sexual
+					intrigue is pervasive. Robert Baratheon (Mark Addy), King of Westeros, asks his old friend, Lord
+					Eddard Stark (Sean Bean), to serve as Hand of the King, or highest official. Secretly warned that
+					the previous Hand was assassinated, Eddard accepts in order of business to investigate further.
+					Meanwhile, Queen Cersei Lannister's family may be hatching a plot to take power. Across the sea, the
+					last members of the previous and deposed ruling family, the Targaryens, are also scheming to regain
+					the throne. The friction between the houses Stark, Lannister, Baratheon, and Targaryen and with the
+					remaining great houses Greyjoy, Tully, Arryn, Tyrell, and Martell leads to full-scale war. All while
+					an ancient evil awakens in the farthest north. Amidst the war and political confusion, a neglected
+					military order of misfits, the Night's Watch, is all that stands between the realms of men and icy
+					horrors beyond.</p5>
+				<br>
+				<script>
+					var slideIndex = 1;
+					showSlides(slideIndex);
+
+					// Next/previous controls
+					function plusSlides(n) {
+						showSlides(slideIndex += n);
+					}
+
+					// Thumbnail image controls
+					function currentSlide(n) {
+						showSlides(slideIndex = n);
+					}
+
+					function showSlides(n) {
+						var i;
+						var slides = document.getElementsByClassName("mySlides");
+						var dots = document.getElementsByClassName("dot");
+						if (n > slides.length) { slideIndex = 1 }
+						if (n < 1) { slideIndex = slides.length }
+						for (i = 0; i < slides.length; i++) {
+							slides[i].style.display = "none";
+						}
+						for (i = 0; i < dots.length; i++) {
+							dots[i].className = dots[i].className.replace(" active", "");
+						}
+						slides[slideIndex - 1].style.display = "block";
+					}
+				</script>
+			</div>
+		</div>
+		<div id="User" class="tabcontent">
+		</div>
+		<script>
+			function openCity(evt, cityName) {
+				var i, tabcontent, tablinks;
+				tabcontent = document.getElementsByClassName("tabcontent");
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+				}
+				tablinks = document.getElementsByClassName("tablinks");
+				for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(" active", "");
+				}
+				document.getElementById(cityName).style.display = "block";
+				evt.currentTarget.className += " active";
+			}
+		</script>
+	</div>
+	<div class="footer">
+	</div>
+	<script>
+		var vid = document.getElementById("myVideo");
+
+		function playVid() {
+			vid.play();
+		}
+
+		function pauseVid() {
+			vid.pause();
+		}
+	</script>
+
+	<script>
+		function Act() {
+			document.getElementById('overview') += " active";
+		}
+	</script>
+</body>
+
+</html>
