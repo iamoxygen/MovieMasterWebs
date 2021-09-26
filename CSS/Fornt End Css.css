@@ -13,7 +13,6 @@ body,html
 }
 .lis
 {
-	float: left;
 	display: inline-block;
 	overflow: hidden;
 	margin: 0 0 0 900px;

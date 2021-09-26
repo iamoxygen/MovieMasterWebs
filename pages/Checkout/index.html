@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../../CSS/footer.css">
+<link rel="stylesheet" href=".../../BootStrap/bootstrap-5.0.0-alpha2-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../BootStrap/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../CSS/Extenal.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="./CSS/index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+		integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+
+</style>
+</head>
+<body>
+    <nav  class="navbar navbar-expand-lg navbar-light bg-light">
+		<a  style="margin-left: 150px;" class="navbar-brand" href="#"><img src="../../Logo/fix logo.png" alt="logo" height="50"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+			aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarText">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link " href="../../index.html"> Home <span class="sr-only"></span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../pages/Watch/index.html">Watch</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../pages/aboutus/AboutsUs.html">About us</a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0"  style="margin-right: 150px;">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item" style="display:block; margin-left: 100px;">
+						<span class="icoons material-icons">
+							account_circle
+						</span>
+					</li>
+					<li class="nav-item" style="margin-top: 10px;">
+						<p tabindex="-1" class="username nav-link">Vikash</p>
+					</li>
+					<li class="nav-item" style="margin-top: 10px;">
+						<a class="nav-link" id="logout" href=".././Login.html" tabindex="-1"
+							aria-disabled="true">Logout</a>
+					</li>
+				</ul>
+			</form>
+		</div>
+	</nav>
+
+
+<div class="Checkoutform">
+<h2>Checkout</h2>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="example@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="House number 457..">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="New Delhi">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="Delhi">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="11006">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="XXXX-XXXX-XXXX-XXXX">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+    <div class="container">
+      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>1</b></span></h4>
+      <p><a style="color: black;" href="../Game of thrones/Game of thornes.html">Game of Thrones</a><span class="price">990/-</span>
+    </p>
+    <img src="../Game of thrones/img/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_.jpg" height="200px"/>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>990/-</b></span></p>
+    </div>
+  </div>
+</div>
+</div>
+<footer style="height: 15rem; background-color: black; margin-top: 50px;">
+    <a class="logolink" href="./index.html"><img class="footer-Logo" src="../../Logo/logo.png"></a>
+    <ul class="footerList">
+        <a href="./index.html"><li class="Footeritems">Home</li></a>
+        <a href="./pages/Watch/index.html"><li class="Footeritems">Watch</li></a>
+        <a href="./pages/aboutus/AboutsUs.html"><li class="Footeritems">About us</li></a>
+        <a href="https://vikaschaubey.netlify.app/" target="_blank"><li class="Footeritems">contact us</li></a>
+    </ul>
+    <footerText class="Rights" style="color: #777;">
+        <span style="margin-top: 515px; display: block;" class="copyrights material-icons">
+            copyright
+        </span>
+        2019 MovieMasters. All Rights Reserved.
+        <p class="Owner">Made by Vikash Chaubey <i class="fas fa-heart"></i></p>
+    </footerText>
+</footer>
+</body>
+</html>

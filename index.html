@@ -8,162 +8,243 @@
 	<link rel="stylesheet" href="./BootStrap/bootstrap-5.0.0-alpha2-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./BootStrap/bootstrap-4.3.1-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./CSS/Extenal.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="./CSS/index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+		integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<script src="./BootStrap/bootstrap-5.0.0-alpha2-dist/js/bootstrap.bundle.js"></script>
+	<link rel="stylesheet" href="./CSS/footer.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		#Navbaredit {
+			padding-left: 5rem;
+			padding-right: 5rem;
+			padding-top: 1rem;
+		}
+
+		text {
+			margin-bottom: 0px;
+			font-size: 1.5rem;
+		}
+	</style>
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light" id="Navbaredit">
-		<a class="navbar-brand" href="index.html"><img src="./Logo/fix logo.png" alt="logo" height="50"></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+		<a class="navbar-brand" href="#"><img src="./Logo/fix logo.png" alt="logo" height="50"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+			aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<div class="collapse navbar-collapse" id="navbarText">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active">
-					<a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+					<a class="nav-link " href="index.html"> Home <span class="sr-only"></span></a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="./pages/Watch/index.html">Watch</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="https://vikaschaubey.netlify.app/">About us</a>
+					<a class="nav-link" href="./pages/aboutus/AboutsUs.html">About us</a>
 				</li>
 			</ul>
 			<form class="form-inline my-2 my-lg-0">
-				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-				<a id="profile">
-					<script>document.write('vikash')</script>
-				</a>
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
-						<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi-bi-person-circle"
-							fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z" />
-							<path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-							<path fill-rule="evenodd"
-								d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z" />
-						</svg>
-
-						<a class="nav-link" id="logout" href="./pages/Login.html" tabindex="-1"
+						<span class="material-icons">
+							account_circle
+						</span>
+					</li>
+					<li class="nav-item">
+						<p tabindex="-1" class="username nav-link">Vikash</p>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="logout" href=".././Login.html" tabindex="-1"
 							aria-disabled="true">Logout</a>
 					</li>
 				</ul>
 			</form>
 		</div>
 	</nav>
-
-
-	<div class="ContentItems">
-		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
-				<li data-target="#carouselExampleControls" data-slide-to="1"></li>
-				<li data-target="#carouselExampleControls" data-slide-to="2"></li>
-				<li data-target="#carouselExampleControls" data-slide-to="3"></li>
-				<li data-target="#carouselExampleControls" data-slide-to="4"></li>
-			</ol>
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img src="./Image/Mirzapur-Season-2-Pankaj-Tripathi-Unveils-Grim-Poster-of-the.jpg"
-						class="d-block w-100" alt="...">
+	<div class="ContentItemsss">
+		<div class="ContentItems">
+			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleControls" data-slide-to="1"></li>
+					<li data-target="#carouselExampleControls" data-slide-to="2"></li>
+					<li data-target="#carouselExampleControls" data-slide-to="3"></li>
+					<li data-target="#carouselExampleControls" data-slide-to="4"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="./Image/Mirzapur-Season-2-Pankaj-Tripathi-Unveils-Grim-Poster-of-the.jpg"
+							class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="./Image/endpic.jpg" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="./Image/au_universal_hero_fullwidth_ralphbreaksinternet_payoff_8efdaba8.jpeg"
+							class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="./Image/aquaman-quad.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="./Image/DhvNfVnX0AEyJ1a.jpg" class="d-block w-100" alt="...">
+					</div>
 				</div>
-				<div class="carousel-item">
-					<img src="./Image/endpic.jpg" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="./Image/au_universal_hero_fullwidth_ralphbreaksinternet_payoff_8efdaba8.jpeg"
-						class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="./Image/aquaman-quad.png" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="./Image/DhvNfVnX0AEyJ1a.jpg" class="d-block w-100" alt="...">
-				</div>
+				<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</a>
 			</div>
-			<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Previous</span>
-			</a>
-			<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Next</span>
-			</a>
+			<script src="../bootstrap-5.0.0-alpha2-dist/js/bootstrap.bundle.js"></script>
 		</div>
-		<script src="../bootstrap-5.0.0-alpha2-dist/js/bootstrap.bundle.js"></script>
-	</div>
-	<div class="page">
-		<h1>Trending News</h1>
-		<div class="archive">
-			<article class="article">
-				<h5>Tom Holland shares first look of 'Spider-Man 3,' along with mask message
-					On Friday..<h5>
-						<img class="image" src="./Image/79100611.webp" height="270px">
-						<p class="para">The 24-year-old British actor took to Instagram to share a behind-the-scenes
-							photo of himself dressed as the character. The actor was also seen wearing a white face
-							mask.
+		<div class="page">
+			<h1>Trending News</h1>
+			<div class="archive">
+				<article class="article">
+					<h2>Tom Holland shares first look of 'Spider-Man 3', along with mask message
+						On Friday..<h2>
+							<img class="image" src="./Image/79100611.webp" width="400px">
+							<p class="para">The 24-year-old British actor took to Instagram to share a behind-the-scenes
+								photo of himself dressed as the character. The actor was also seen wearing a white face
+								mask.<br>
+								"Wear a mask, I'm wearing two...," Holland captioned the photograph, reminding fans to
+								wear their PPE amid the coronavirus pandemic.</p>
+							<a href="##">Read more</a>
+				</article>
 
-							"Wear a mask, I'm wearing two...," Holland captioned the photograph, reminding fans to wear
-							their PPE
-							amid the coronavirus pandemic.</p><a href="##">Read more</a>
-			</article>
-
-			<article class="article">2
-				<hr>
-				<hr>
-				<hr>
-				<hr>
-				<hr>
-			</article>
-			<article class="article">
-				<h1>The Live-Action Batman Movies In Order: How To Watch By Release Date</h1>
-				<img class="image" src="./Image/5bae24da98f96a4246ccdef4d416d63bf7f9eba3.jpg" width="1290px" alt="image">
-				<p class="RightPara">Like other films and TV series, The Batman’s production and release date have been
-					delayed several times, including an emergency shutdown just days after resuming production when
-					Pattinson himself tested positive for COVID-19 a year ago.<br><br>
-
-					Highy anticipated, The Batman still hasn’t given details about the plot for its fans, but we do know
-					the story will take place during the second year of Bruce Wayne as Batman. The Riddler (Paul Dano)
-					is set to be the main antagonist, Catwoman (Zoë Kravitz) will be featured and The Penguin (Colin
-					Farrell) will apparently use the movie as a backdoor pilot. The movie also features Jeffrey Wright,
-					John Turturro, Peter Sarsgaard, Barry Keoghan, Jayme Lawson, and Andy Serkis.</p><a href="##">Read more</a>
-
-
-			</article>
-			<article class="article">
-				<h3>Joe Biden and Kamala Harris' victory over Donald Trump gets an
-					'Avengers: Endgame' twist; leaves Mark Ruffalo and netizens in splits</h3>
-				<img src="./Image/8e2e4e604117477a9621dafd02f2abd7_18.jpg" alt="image" height="200px" class="image">
-
-				<p class="para">Joe Biden won the election 2020 and has become the 46th president of the United States.
-					He won over theWhite House from Donald Trump after winning over the crucial state of Pennsylvania.
-					Congratulatory posts have been pouring in over the last several hours for Joe Biden and his running
-					mate Kamala Harris,
-					who has become the first female Vice President of America.
-					The results of the US election have also sparked a meme fest on social media. A lot of people are
-					celebrating Trump’s exit and they have been making hilarious memes on him. Recently, an artist from
-					the US shared a video inspired by ‘Avengers: Endgame’ which features all the political figures and
-					has
-					taken social media by storm.
-					The video shows the climax scene of the film featuring Joe Biden, Donald Trump, Barack Obama among
-					others. It shows Biden as Captain America and Trump as Thanos. The clip also features Kamala Harris.
-					In the
-					video, they can be seen speaking their statements made during their press meets with Trump claiming
-					that he
-					had won the election. The video has also impressed Mark Ruffalo, who is known for playing the Hulk.
-					He retweeted the
-					video and wrote, “Amazing. Lol!” Have a look:</p>
+				<article class="article">
+					<h2>James Bond gets delayed by Coronavirus</h2>
+					<img src="https://cdn.onebauer.media/one/media/5db5/85da/adde/6446/aab1/1e0a/no-time-to-die-crop.jpg?format=jpg&quality=80&width=850&ratio=1-1&resize=aspectfit"
+						width="845px" />
+					<p class="para">The gasps echoed around the Empire office when the news first broke. Reports
+						indicated that the Coronavirus was spreading rapidly, but its effect on the entertainment
+						industry 4
+						only really became apparent with an announcement that – at the time – was a major shock. Weeks
+						away from its
+						release, Daniel Craig’s final James Bond film No Time To Die shifted back by a whole seven
+						months into November, a delay which seemed like more than enough time for things to get back to
+						normal. Or so we thought...</p>
 					<a href="##">Read more</a>
-			</article>
+				</article>
+				<article class="article">
+					<h1>The Live-Action Batman Movies In Order: How To Watch By Release Date</h1>
+					<img class="image" src="./Image/5bae24da98f96a4246ccdef4d416d63bf7f9eba3.jpg" width="1290px"
+						alt="image">
+					<p class="RightPara">Like other films and TV series, The Batman’s production and release date have
+						been delayed several times, including an emergency shutdown just days after resuming production
+						when
+						Pattinson himself tested positive for COVID-19 a year ago.<br><br>
+						Highy anticipated, The Batman still hasn’t given details about the plot for its fans, but we do
+						know the story will take place during the second year of Bruce Wayne as Batman. The Riddler
+						(Paul Dano) is set to be the main antagonist, Catwoman (Zoë Kravitz) will be featured and The
+						Penguin
+						(Colin Farrell) will apparently use the movie as a backdoor pilot. The movie also features
+						Jeffrey
+						Wright, John Turturro, Peter Sarsgaard, Barry Keoghan, Jayme Lawson, and Andy Serkis.</p><a
+						href="##">Read
+						more</a>
 
+
+				</article>
+				<article class="article">
+					<h3>Joe Biden and Kamala Harris' victory over Donald Trump gets an
+						'Avengers: Endgame' twist; leaves Mark Ruffalo and netizens in splits</h3>
+					<img src="./Image/8e2e4e604117477a9621dafd02f2abd7_18.jpg" alt="image" height="200px" class="image">
+
+					<p class="para">Joe Biden won the election 2020 and has become the 46th president of the United
+						States.
+						He won over theWhite House from Donald Trump after winning over the crucial state of
+						Pennsylvania.
+						Congratulatory posts have been pouring in over the last several hours for Joe Biden and his
+						running
+						mate Kamala Harris,
+						who has become the first female Vice President of America.
+						The results of the US election have also sparked a meme fest on social media. A lot of people
+						are
+						celebrating Trump’s exit and they have been making hilarious memes on him. Recently, an artist
+						from
+						the US shared a video inspired by ‘Avengers: Endgame’ which features all the political figures
+						and
+						has
+						taken social media by storm.
+						The video shows the climax scene of the film featuring Joe Biden, Donald Trump, Barack Obama
+						among
+						others. It shows Biden as Captain America and Trump as Thanos. The clip also features Kamala
+						Harris.
+						In the
+						video, they can be seen speaking their statements made during their press meets with Trump
+						claiming
+						that he
+						had won the election. The video has also impressed Mark Ruffalo, who is known for playing the
+						Hulk.
+						He retweeted the
+						video and wrote, “Amazing. Lol!” Have a look:</p>
+					<a href="##">Read more</a>
+				</article>
+				<article class="article">
+					<h3>Joe Biden and Kamala Harris' victory over Donald Trump gets an
+						'Avengers: Endgame' twist; leaves Mark Ruffalo and netizens in splits</h3>
+					<img src="./Image/8e2e4e604117477a9621dafd02f2abd7_18.jpg" alt="image" height="200px" class="image">
+
+					<p class="para">Joe Biden won the election 2020 and has become the 46th president of the United
+						States.
+						He won over theWhite House from Donald Trump after winning over the crucial state of
+						Pennsylvania.
+						Congratulatory posts have been pouring in over the last several hours for Joe Biden and his
+						running
+						mate Kamala Harris,
+						who has become the first female Vice President of America.
+						The results of the US election have also sparked a meme fest on social media. A lot of people
+						are
+						celebrating Trump’s exit and they have been making hilarious memes on him. Recently, an artist
+						from
+						the US shared a video inspired by ‘Avengers: Endgame’ which features all the political figures
+						and
+						has
+						taken social media by storm.
+						The video shows the climax scene of the film featuring Joe Biden, Donald Trump, Barack Obama
+						among
+						others. It shows Biden as Captain America and Trump as Thanos. The clip also features Kamala
+						Harris.
+						In the
+						video, they can be seen speaking their statements made during their press meets with Trump
+						claiming
+						that he
+						had won the election. The video has also impressed Mark Ruffalo, who is known for playing the
+						Hulk.
+						He retweeted the
+						video and wrote, “Amazing. Lol!” Have a look:</p>
+					<a href="##">Read more</a>
+				</article>
+			</div>
 		</div>
 	</div>
-	<script src="./js/validation.js"></script>
+	<footer style="height: 15rem; background-color: black; margin-top: 50px;">
+		<a class="logolink" href="./index.html"><img class="footer-Logo" src="./Logo/logo.png"></a>
+		<ul class="footerList">
+			<a href="./index.html"><li class="Footeritems">Home</li></a>
+			<a href="./pages/Watch/index.html"><li class="Footeritems">Watch</li></a>
+			<a href="./pages/aboutus/AboutsUs.html"><li class="Footeritems">About us</li></a>
+			<a href="https://vikaschaubey.netlify.app/" target="_blank"><li class="Footeritems">contact us</li></a>
+		</ul>
+		<footerText class="Rights">
+			<span class="copyrights material-icons">
+				copyright
+			</span>
+			2019 MovieMasters. All Rights Reserved.
+			<p class="Owner">Made by Vikash Chaubey <i class="fas fa-heart"></i></p>
+		</footerText>
+	</footer>
 </body>
 
 </html>

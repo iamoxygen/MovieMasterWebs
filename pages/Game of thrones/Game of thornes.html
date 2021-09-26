@@ -5,121 +5,23 @@
 	<meta charset="utf-8">
 	<title>Game of Thrones</title>
 	<link rel="Icon" href="../Logo/fix logo.png.ico">
-	<link rel="stylesheet" href="../../bootstrap-5.0.0-alpha2-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../../bootstrap-4.3.1-dist/css/bootstrap.min.css">
-	<script src="../../bootstrap-5.0.0-alpha2-dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="../../BootStrap/bootstrap-5.0.0-alpha2-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../BootStrap/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../CSS/footer.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+		integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="../../BootStrap/bootstrap-5.0.0-alpha2-dist/js/bootstrap.bundle.min.js"></script>
 	<link rel="stylesheet" href="../../CSS/REvStyle2.css">
 	<link rel="stylesheet" href="../../CSS/StarRating2.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style>
-		.bi-bi-person-circle {
-			display: inline-block;
-			position: absolute;
-			margin: 16.5px 0px 0px 5px;
-		}
-
-		#logout {
-			margin-left: 20px;
-			margin-right: 20px;
-		}
-
-		.nav-link {
-			font-size: 20px;
-		}
-
-		.navbar-brand {
-			margin-left: 200px;
-		}
-
-		#navbarSupportedContent,
-		.btn {
-			margin-right: 40px;
-		}
-
-		.carousel-item {
-			height: 28rem;
-			background: #777;
-			color: white;
-			position: relative;
-		}
-
-		body {
-			margin: 0px;
-			padding: 0px;
-			text-transform: capitalize;
-		}
-
-		.head {
-			height: 61px;
-			background-color: black;
-		}
-
-		.video {
-			background-color: #EAEAEA;
-			height: 490px;
-			position: relative;
-		}
-
-		#AC {
-			position: relative;
-			margin-top: 160px;
-			margin-left: 135px;
-			height: 450px;
-			border-radius: 5px;
-		}
-
-		#FC {
-			height: 418px;
-			width: 100%;
-			position: absolute;
-		}
-
-		.rating {
-			height: 65px;
-			width: 400px;
-			margin-top: 0px;
-			background: #40EB1F;
-			float: inherit;
-
-		}
-
-		.main {
-			height: 1400px;
-		}
-
-		#AD {
-			position: absolute;
-			float: left;
-			margin-top: 150px;
-			margin-left: 300px;
-			height: 15%;
-		}
-
-		#AD:hover {
-			height: 16%;
-			transition: 0.2s;
-			cursor: pointer;
-		}
-
-		#overlay {
-			position: fixed;
-			display: none;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			background-color: rgba(0, 0, 0, 0.5);
-			z-index: 2;
-			cursor: pointer;
-		}
-	</style>
 </head>
 
 <body onLoad="openCity(event, 'overview')">
 	<nav class="navbar navbar-expand-lg navbar-light bg-light" id="Navbaredit">
-		<a class="navbar-brand" href="../../index.html"><img src="../../Logo/fix logo.png" alt="logo" height="80"></a>
+		<a class="navbar-brand" href="../../index.html"><img src="../../Logo/fix logo.png" alt="logo" height="50"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -134,7 +36,7 @@
 					<a class="nav-link" href="../Watch/index.html">Watch</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="../../aboutus/AboutsUs.html">About us</a>
+					<a class="nav-link" href="../aboutus/AboutsUs.html">About us</a>
 				</li>
 			</ul>
 			<form class="form-inline my-2 my-lg-0">
@@ -159,27 +61,28 @@
 	</nav>
 	<div class="main">
 		<div class="video">
-			<img id="FC" src="tyrion-lannister-game-of-thrones-wallpaper-preview.jpg" alt="Video" />
-			<img id="AC" src="MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_.jpg"
+			<img id="FC" src="./img/tyrion-lannister-game-of-thrones-wallpaper-preview.jpg" alt="Video" />
+			<img id="AC"
+				src="./img/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_.jpg"
 				alt="poster" />
 			<span class="titles">Game of Thrones</span>
 			<span class="titles" id="T1">Action</span>
 			<span class="titles" id="T2">Adventure</span>
 			<span class="titles" id="T3">Fantasy</span>
 
-			<span class="titles" id="T4"><img id="imgT4" src="1200px-Rotten_Tomatoes_positive_audience.svg.png"
+			<span class="titles" id="T4"><img id="imgT4" src="./img/1200px-Rotten_Tomatoes_positive_audience.svg.png"
 					height="35" alt="Rating"></span>
 			<p1>84%</p1>
 			<p3>RATE IT</p3>
-			<a href="NarcosPayment.html"><button class="titles" id="Buy">Buy Now</button></a>
+			<a href="../Checkout/index.html"><button class="titles" id="Buy">Buy Now</button></a>
 			<x-star-rating onClick="openForm()" value="3" number="5"></x-star-rating>
 			<script src="../CSS/StarRating.js"></script>
 
-			<img onclick="on()" id="AD" src="360_F_362878515_d4IZ88mRjRtjdtoEHzI7y4GcGhBsO4Nr.png" alt="play" />
+			<img onclick="on()" id="AD" src="./img/360_F_362878515_d4IZ88mRjRtjdtoEHzI7y4GcGhBsO4Nr.png" alt="play" />
 
 		</div>
 		<div id="overlay" onClick="off()">
-			<iframe width="649" height="365" src="https://www.youtube.com/embed/gcTkNV5Vg1E" frameborder="0"
+			<iframe width="849" height="465" src="https://www.youtube.com/embed/gcTkNV5Vg1E" frameborder="0"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 				allowfullscreen></iframe>
 		</div>
@@ -194,7 +97,7 @@
 		</script>
 		<div class="Leftpanel">
 			<button onClick="openForm()" class="titles" id="Watch">Watch Now</button>
-			<img class="titles" id="cal" src="calendar-512.png" alt="cal">
+			<img class="titles" id="cal" src="./img/calendar-512.png" alt="cal">
 			<span class="titles" id="cla">(2011–2019) Released</span>
 			<span class="titles" id="language">&nbsp;Language&nbsp;</span>
 			<span class="titles" id="languagess">English, Spanish
@@ -223,8 +126,8 @@
 
 		<div class="Rightpanel">
 			<div class="tab">
-				<button class="tablinks" id="over" onclick="openCity(event, 'overview')">Overview</button>
-				<button id="margi" class="tablinks" onclick="openCity(event, 'User')">Cast</button>
+				<button class="tablinks" id="over" onclick="openCast(event, 'overview')">Overview</button>
+				<button id="margi" class="tablinks" onclick="openCast(event, 'User')">Cast</button>
 			</div>
 			<div id="overview" class="tabcontent">
 				<h2>Story</h2>
@@ -246,57 +149,35 @@
 					military order of misfits, the Night's Watch, is all that stands between the realms of men and icy
 					horrors beyond.</p5>
 				<br>
-				<script>
-					var slideIndex = 1;
-					showSlides(slideIndex);
-
-					// Next/previous controls
-					function plusSlides(n) {
-						showSlides(slideIndex += n);
-					}
-
-					// Thumbnail image controls
-					function currentSlide(n) {
-						showSlides(slideIndex = n);
-					}
-
-					function showSlides(n) {
-						var i;
-						var slides = document.getElementsByClassName("mySlides");
-						var dots = document.getElementsByClassName("dot");
-						if (n > slides.length) { slideIndex = 1 }
-						if (n < 1) { slideIndex = slides.length }
-						for (i = 0; i < slides.length; i++) {
-							slides[i].style.display = "none";
-						}
-						for (i = 0; i < dots.length; i++) {
-							dots[i].className = dots[i].className.replace(" active", "");
-						}
-						slides[slideIndex - 1].style.display = "block";
-					}
-				</script>
 			</div>
 		</div>
 		<div id="User" class="tabcontent">
 		</div>
-		<script>
-			function openCity(evt, cityName) {
-				var i, tabcontent, tablinks;
-				tabcontent = document.getElementsByClassName("tabcontent");
-				for (i = 0; i < tabcontent.length; i++) {
-					tabcontent[i].style.display = "none";
-				}
-				tablinks = document.getElementsByClassName("tablinks");
-				for (i = 0; i < tablinks.length; i++) {
-					tablinks[i].className = tablinks[i].className.replace(" active", "");
-				}
-				document.getElementById(cityName).style.display = "block";
-				evt.currentTarget.className += " active";
-			}
-		</script>
 	</div>
-	<div class="footer">
-	</div>
+	.<footer style="height: 15rem; background-color: black; margin-top: 50px;">
+		<a class="logolink" href="./index.html"><img class="footer-Logo" src="../../Logo/logo.png"></a>
+		<ul class="footerList">
+			<a href="./index.html">
+				<li class="Footeritems">Home</li>
+			</a>
+			<a href="./pages/Watch/index.html">
+				<li class="Footeritems">Watch</li>
+			</a>
+			<a href="./pages/aboutus/AboutsUs.html">
+				<li class="Footeritems">About us</li>
+			</a>
+			<a href="https://vikaschaubey.netlify.app/" target="_blank">
+				<li class="Footeritems">contact us</li>
+			</a>
+		</ul>
+		<footerText class="Rights">
+			<span style="margin-top: 0px;" class="copyrights material-icons">
+				copyright
+			</span>
+			2019 MovieMasters. All Rights Reserved.
+			<p class="Owner">Made by Vikash Chaubey <i class="fas fa-heart"></i></p>
+		</footerText>
+	</footer>
 	<script>
 		var vid = document.getElementById("myVideo");
 
@@ -307,13 +188,11 @@
 		function pauseVid() {
 			vid.pause();
 		}
-	</script>
-
-	<script>
 		function Act() {
 			document.getElementById('overview') += " active";
 		}
 	</script>
+	<script src="./js/tabcontent.js"></script>
 </body>
 
 </html>
